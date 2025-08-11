@@ -1,19 +1,14 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
+import PortfolioHeader from './components/PortfolioHeader'
 
 const App = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-		<div>
-			<NavBar/>
-		</div>
-        <p>
-          Hello World!!
-        </p>
-      </div>
+  	<>
+		<NavBar/>
+		<PortfolioHeader/>
     </>
   )
 }
