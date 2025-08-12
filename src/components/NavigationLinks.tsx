@@ -17,7 +17,8 @@ const NavigationLinks: React.FC<NavigationLinksProps> = ({ isVisible, items }) =
 					))}
 				</div>
 			</div>
-		) : null);
+		) : null
+	);
 }
 
 export default NavigationLinks;
