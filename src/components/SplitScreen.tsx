@@ -13,7 +13,7 @@ const SplitScreen = () => {
 				</div>
 				
 				{/* Right Half - Image */}
-				<div className="w-full lg:w-1/3 bg-white dark:bg-gray-800 flex items-center justify-center relative">
+				<div className="w-full lg:w-1/3 bg-white dark:bg-black flex items-center justify-center relative">
 					<div className="relative max-w-sm lg:max-w-none">
 						<img
 							src={me}
