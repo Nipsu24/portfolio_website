@@ -1,20 +1,43 @@
 import NavLink from './NavLink'
+import { useState, useEffect } from 'react';
 
 const NavBar = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+	const [lastScrollY, setLastScrollY] = useState(0);
+
 	const navItems = [
     { href: "#about", label: "About" },
     { href: "#portfolio", label: "Portfolio" },
     { href: "#contact", label: "Contact" }
   ];
 
+  useEffect(() => {
+	const handleScroll = () => {
+		const currentScrollY = window.scrollY;
+		
+		// Check scroll direction first
+		if (currentScrollY < lastScrollY) {
+			// Scrolling up - show full name
+			setIsScrolled(false);
+		} else if (currentScrollY > 100) {
+			// Scrolling down and past 100px - show MM
+			setIsScrolled(true);
+		}
+		
+		setLastScrollY(currentScrollY);
+	};
+	window.addEventListener('scroll', handleScroll);
+	return () => window.removeEventListener('scroll', handleScroll);
+}, [lastScrollY]);
+
 	return (
-		<nav className="bg-white dark:bg-black">
+		<nav className="bg-white dark:bg-black sticky top-0 z-50">
 			<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 				<div className="relative flex h-16 items-center justify-between">
 					{/* Logo/Brand */}
 					<div className="flex-shrink-0">
-						<a href="#" className="text-black dark:text-white text-xl font-bold">
-							Marius Meier
+						<a href="#" className="text-black dark:text-white text-xl font-bold transition-all duration-300">
+							{isScrolled ? "{MM}" : "{Marius Meier}"}
 						</a>
 					</div>
 
