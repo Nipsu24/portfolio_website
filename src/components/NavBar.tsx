@@ -1,5 +1,6 @@
-import NavLink from './NavLink'
+import NavigationLinks from './NavigationLinks'
 import { useState, useEffect } from 'react';
+import Logo from './Logo'
 
 const NavBar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -16,13 +17,12 @@ const NavBar = () => {
 	const handleScroll = () => {
 		const currentScrollY = window.scrollY;
 		
-		// Check scroll direction first
 		if (currentScrollY < lastScrollY) {
-			// Scrolling up - show full name and navbar
+			// Scrolls up - shows full name and navbar
 			setIsScrolled(false);
 			setIsVisible(true);
 		} else if (currentScrollY > 100) {
-			// Scrolling down and past 100px - show MM and hide navbar
+			// Scrolls down and past 100px - show MM and hide navbar
 			setIsScrolled(true);
 			setIsVisible(false);
 		}
@@ -40,25 +40,9 @@ const NavBar = () => {
 			<div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 				<div className="relative flex h-16 items-center justify-between">
 					{/* Logo/Brand - Always visible */}
-					<div className="flex-shrink-0">
-						<a href="#" className="text-black dark:text-white text-xl font-bold transition-all duration-300">
-							{isScrolled ? "{MM}" : "{Marius Meier}"}
-						</a>
-					</div>
-
+					<Logo isScrolled={isScrolled}/>
 					{/* Navigation Links - Hide/show with scroll */}
-					{isVisible ? (
-						<div className="hidden md:block">
-							<div className="ml-10 flex items-baseline space-x-4">
-								{navItems.map((item) => (
-									<NavLink key={item.href} href={item.href}>
-										{item.label}
-									</NavLink>
-								))}
-							</div>
-						</div>
-					) : null}
-
+					<NavigationLinks isVisible={isVisible} items={navItems}  />
 					{/* Mobile menu button - Hide/show with scroll */}
 					{isVisible ? (
 						<div className="md:hidden">
