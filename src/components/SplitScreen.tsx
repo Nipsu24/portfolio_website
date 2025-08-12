@@ -22,7 +22,7 @@ const SplitScreen = () => {
 						<h1 className="text-4xl font-bold text-gray-900 dark:text-white pr-8">{"<Hi there, nice to meet you/>"}</h1>
 						<p className="mt-4 text-lg text-gray-600 dark:text-gray-300 pr-8">{descriptiveText}</p>
 						<p className="mt-4 text-lg text-gray-600 dark:text-gray-300 pr-8">Find out what I have been working on recently {"\u{1F680}"}</p>
-						<NavLink href="#portfolio" className="bg-neutral-50 dark:bg-gray-800 rounded-full p-3 animate-bounce mt-8 mx-auto cursor-pointer w-fit inline-flex">
+						<NavLink href="#portfolio" className="bg-neutral-50 hover:bg-neutral-200 dark:bg-gray-800 dark:hover:bg-gray-600 rounded-full p-3 animate-bounce mt-8 mx-auto cursor-pointer w-fit inline-flex">
 						<svg className="size-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
 						</svg>
