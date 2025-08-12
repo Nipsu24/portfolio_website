@@ -1,14 +1,16 @@
 import me from '../assets/me.jpeg';
 
 const SplitScreen = () => {
+	const descriptiveText = "I am an aspiring software developer with main interest in backend/api development. Open minded and always up to learn about new tech and tools"
 	return (
 		<div>
 			<div id="about" className="flex flex-col lg:flex-row mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  bg-white dark:bg-black">
 				{/* Left Half - Content Area */}
 				<div className="w-full lg:w-2/3 bg-white dark:bg-black flex items-center justify-center">
 					<div className="text-center py-16">
-						<h1 className="text-4xl font-bold text-gray-900 dark:text-white">Welcome</h1>
-						<p className="mt-4 text-lg text-gray-600 dark:text-gray-300">Nice to meet you!</p>
+						<h1 className="text-4xl font-bold text-gray-900 dark:text-white pr-8">{"<Hi there, nice to meet you>"}</h1>
+						<p className="mt-4 text-lg text-gray-600 dark:text-gray-300 pr-8">{descriptiveText}</p>
+						<p className="mt-4 text-lg text-gray-600 dark:text-gray-300 pr-8">Check out what I have been working on recently</p>
 					</div>
 				</div>
 				
