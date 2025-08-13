@@ -12,10 +12,10 @@ const SplitScreen = () => {
   }, []);
 	
 	return (
-		<div>
-			<div id="about" className="flex flex-col lg:flex-row mx-auto max-w-7xl px-2 sm:px-6 lg:px-8  bg-white dark:bg-black min-h-screen lg:min-h-0">
+		<div className="bg-white dark:bg-black">
+			<div id="about" className="flex flex-col lg:flex-row mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 min-h-screen lg:min-h-0">
 				{/* Left Half - Content Area */}
-				<div className="w-full lg:w-2/3 bg-white dark:bg-black flex items-center justify-center py-8 lg:py-0">
+				<div className="w-full lg:w-2/3 flex items-center justify-center py-8 lg:py-0">
 					<div className={`text-center py-16 transition-all duration-1000 ease-out ${
         				isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       				}`}>
@@ -31,7 +31,7 @@ const SplitScreen = () => {
 				</div>
 				
 				{/* Right Half - Image */}
-				<div className="w-full lg:w-1/3 bg-white dark:bg-black flex items-end justify-center relative pb-0 pt-8 lg:py-0">
+				<div className="w-full lg:w-1/3 flex items-end justify-center relative pb-0 pt-8 lg:py-0">
 					<div className="relative w-full max-w-sm lg:max-w-none">
 						<img
 							src={me}
