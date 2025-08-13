@@ -1,19 +1,101 @@
 interface HamburgerProps {
   isVisible: boolean;
+  isOpen: boolean;
+  onToggle: () => void;
 }
 
-const Hamburger: React.FC<HamburgerProps> = ({ isVisible }) => {
-	return (
-		isVisible ? (
-			<div className="md:hidden">
-				<button className="text-black dark:text-white hover:text-gray-500">
-					<svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-					</svg>
-				</button>
-			</div>
-		) : null
-	);
-}
+const Hamburger: React.FC<HamburgerProps> = ({ isVisible, isOpen, onToggle }) => {
+if (!isVisible) return null;
+
+  return (
+    <div className="md:hidden">
+      <button 
+        onClick={onToggle}
+        className="text-black dark:text-white hover:text-gray-500 p-2"
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+      >
+        {/* Hamburger to X animation */}
+        <div className="w-6 h-6 flex flex-col justify-center items-center">
+          <span
+            className={`block h-0.5 w-6 bg-current transform transition-all duration-300 ${
+              isOpen ? 'rotate-45 translate-y-1.5' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-current transform transition-all duration-300 mt-1 ${
+              isOpen ? 'opacity-0' : ''
+            }`}
+          />
+          <span
+            className={`block h-0.5 w-6 bg-current transform transition-all duration-300 mt-1 ${
+              isOpen ? '-rotate-45 -translate-y-1.5' : ''
+            }`}
+          />
+        </div>
+      </button>
+
+      {/* Mobile Navigation Menu */}
+      <div
+        className={`absolute top-full left-0 w-full bg-white dark:bg-black shadow-lg transform transition-all duration-300 ${
+          isOpen ? 'opacity-100 scale-y-100' : 'opacity-0 scale-y-0'
+        } origin-top z-50`}
+      >
+        <div className="px-4 py-6 space-y-4">
+          <a
+            href="#about"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            onClick={onToggle} // Close menu when link is clicked
+          >
+            About
+          </a>
+          <a
+            href="#portfolio"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            onClick={onToggle}
+          >
+            Portfolio
+          </a>
+          <a
+            href="#contact"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            onClick={onToggle}
+          >
+            Contact
+          </a>
+		  <a
+            href="https://github.com/nipsu24"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            target="_blank"
+			rel="noopener noreferrer"
+			onClick={onToggle}
+			aria-label="Github"
+          >
+            Github
+          </a>
+		   <a
+            href="https://linkedin.com/in/marius-meier-msc"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            target="_blank"
+			rel="noopener noreferrer"
+			onClick={onToggle}
+			aria-label="LinkedIn"
+          >
+            LinkedIn
+          </a>
+		    <a
+            href="/resume.pdf"
+            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+            target="_blank"
+			rel="noopener noreferrer"
+			onClick={onToggle}
+			aria-label="Resume"
+          >
+            Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Hamburger;

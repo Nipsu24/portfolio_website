@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import NavBar from './components/NavBar'
 import PortfolioHeader from './components/PortfolioHeader'
 import ProjectGrid from './components/ProjectGrid'
@@ -6,8 +5,6 @@ import SplitScreen from './components/SplitScreen'
 import {headerTopThree, headerFurtherProjects} from './text'
 
 const App = () => {
-  const [count, setCount] = useState(0)
-
   return (
   	<>
 		<NavBar/>

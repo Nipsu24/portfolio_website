@@ -14,6 +14,11 @@ const NavBar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isVisible, setIsVisible] = useState(true);
 	const [lastScrollY, setLastScrollY] = useState(0);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+	const toggleMobileMenu = () => {
+		setIsMobileMenuOpen(!isMobileMenuOpen);
+	};
 
 	const navItems = [
     { href: "#about", label: "About" },
@@ -31,6 +36,11 @@ const NavBar = () => {
 	const handleScroll = () => {
 		const currentScrollY = window.scrollY;
 		
+	// Close mobile menu on scroll
+		if (isMobileMenuOpen) {
+			setIsMobileMenuOpen(false);
+		}
+
 		if (currentScrollY < lastScrollY) {
 			// Scrolls up - shows full name and navbar
 			setIsScrolled(false);
@@ -44,7 +54,7 @@ const NavBar = () => {
 	};
 	window.addEventListener('scroll', handleScroll);
 	return () => window.removeEventListener('scroll', handleScroll);
-}, [lastScrollY]);
+}, [lastScrollY, isMobileMenuOpen]);
 
 	return (
 		<nav className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -59,7 +69,10 @@ const NavBar = () => {
 					{/* Mobile menu button - Hide/show with scroll */}
 					<div className="ml-auto">
 						<NavImg isVisible={isVisible} items={imgItems}/>
-						<Hamburger isVisible={isVisible} />
+						<Hamburger 
+							isVisible={isVisible} 
+              				isOpen={isMobileMenuOpen}
+              				onToggle={toggleMobileMenu} />
 					</div>
 				</div>
 			</div>
