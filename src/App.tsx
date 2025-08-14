@@ -2,6 +2,7 @@ import NavBar from './components/NavBar'
 import PortfolioHeader from './components/PortfolioHeader'
 import ProjectGrid from './components/ProjectGrid'
 import SplitScreen from './components/SplitScreen'
+import Footer from './components/Footer'
 import {headerTopThree, headerFurtherProjects} from './text'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 			<PortfolioHeader text={headerFurtherProjects}/>
 			<ProjectGrid isTopThree={false}/>
 		</div>
+		<Footer/>
     </>
   )
 }

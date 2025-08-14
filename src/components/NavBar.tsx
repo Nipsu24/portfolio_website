@@ -5,6 +5,12 @@ import Logo from './Logo'
 import { imgItems } from '../text';
 import NavImg from './NavImg'
 
+export const navItems = [
+{ href: "#about", label: "About" },
+{ href: "#portfolio", label: "Portfolio" },
+{ href: "#contact", label: "Contact" }
+];
+
 const NavBar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isVisible, setIsVisible] = useState(true);
@@ -14,12 +20,6 @@ const NavBar = () => {
 	const toggleMobileMenu = () => {
 		setIsMobileMenuOpen(!isMobileMenuOpen);
 	};
-
-	const navItems = [
-    { href: "#about", label: "About" },
-    { href: "#portfolio", label: "Portfolio" },
-    { href: "#contact", label: "Contact" }
-  ];
 
   useEffect(() => {
 	const handleScroll = () => {
