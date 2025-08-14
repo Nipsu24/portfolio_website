@@ -1,3 +1,8 @@
+import { externalLinks } from "../text";
+import { navItems } from "./NavBar";
+
+{ externalLinks}
+
 interface HamburgerProps {
   isVisible: boolean;
   isOpen: boolean;
@@ -41,57 +46,27 @@ if (!isVisible) return null;
         } origin-top z-50`}
       >
         <div className="px-4 py-6 space-y-4">
-          <a
-            href="#about"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            onClick={onToggle} // Close menu when link is clicked
-          >
-            About
-          </a>
-          <a
-            href="#portfolio"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            onClick={onToggle}
-          >
-            Portfolio
-          </a>
-          <a
-            href="#contact"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            onClick={onToggle}
-          >
-            Contact
-          </a>
-		  <a
-            href="https://github.com/nipsu24"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            target="_blank"
-			rel="noopener noreferrer"
+          {navItems.map((item) => (
+			<a
+			href={item.href}
+			className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
 			onClick={onToggle}
-			aria-label="Github"
-          >
-            Github
-          </a>
-		   <a
-            href="https://linkedin.com/in/marius-meier-msc"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            target="_blank"
-			rel="noopener noreferrer"
-			onClick={onToggle}
-			aria-label="LinkedIn"
-          >
-            LinkedIn
-          </a>
-		    <a
-            href="/resume.pdf"
-            className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-            target="_blank"
-			rel="noopener noreferrer"
-			onClick={onToggle}
-			aria-label="Resume"
-          >
-            Resume
-          </a>
+			>
+				{item.label}
+			</a>
+		  ))}
+			{externalLinks.map((link) => (
+			<a
+				key={link.href}
+				href={link.href}
+				className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+				target={link.target}
+				rel={link.rel}
+				aria-label={link.text}
+			>
+				{link.text}
+			</a>
+			))}
         </div>
       </div>
     </div>
