@@ -4,12 +4,7 @@ import { useState, useEffect } from 'react';
 import Logo from './Logo'
 import { imgItems } from '../text';
 import NavImg from './NavImg'
-
-export const navItems = [
-{ href: "#about", label: "About" },
-{ href: "#portfolio", label: "Portfolio" },
-{ href: "#contact", label: "Contact" }
-];
+import { navItems } from '../text';
 
 const NavBar = () => {
 	const [isScrolled, setIsScrolled] = useState(false);

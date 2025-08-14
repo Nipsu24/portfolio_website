@@ -60,6 +60,12 @@ export const imgItems = [
 		{ href: "/resume.pdf", label: "Resume", lightSource: CvLogoLight, darkSource: CvLogoDark, type: "pdf" as const}
 	]
 
+export const navItems = [
+{ href: "#about", label: "About" },
+{ href: "#portfolio", label: "Portfolio" },
+{ href: "#contact", label: "Contact" }
+];
+
 export const externalLinks = [
   { 
     href: "https://github.com/nipsu24",

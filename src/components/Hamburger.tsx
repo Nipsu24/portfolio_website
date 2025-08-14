@@ -1,5 +1,5 @@
 import { externalLinks } from "../text";
-import { navItems } from "./NavBar";
+import { navItems } from "../text";
 
 { externalLinks}
 

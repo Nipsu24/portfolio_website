@@ -1,4 +1,4 @@
-import { navItems } from "./NavBar";
+import { navItems } from "../text";
 import NavLink from "./NavLink";
 import { externalLinks } from "../text";
 
