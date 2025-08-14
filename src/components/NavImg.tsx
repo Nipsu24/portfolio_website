@@ -10,7 +10,7 @@ interface NavImgProps {
 }
 
 const NavImg: React.FC<NavImgProps> = ({ isVisible, items }) => {
-	if (!isVisible) return null;
+  if (!isVisible) return null;
 
   return (
     <div className="hidden md:flex items-center space-x-3">

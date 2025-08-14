@@ -1,7 +1,5 @@
-import { externalLinks } from "../text";
-import { navItems } from "../text";
-
-{ externalLinks}
+import { externalLinks } from '../text';
+import { navItems } from '../text';
 
 interface HamburgerProps {
   isVisible: boolean;
@@ -10,14 +8,14 @@ interface HamburgerProps {
 }
 
 const Hamburger: React.FC<HamburgerProps> = ({ isVisible, isOpen, onToggle }) => {
-if (!isVisible) return null;
+  if (!isVisible) return null;
 
   return (
     <div className="md:hidden">
-      <button 
+      <button
         onClick={onToggle}
         className="text-black dark:text-white hover:text-gray-500 p-2"
-        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-label={isOpen ? 'Close menu' : 'Open menu'}
       >
         {/* Hamburger to X animation */}
         <div className="w-6 h-6 flex flex-col justify-center items-center">
@@ -47,26 +45,26 @@ if (!isVisible) return null;
       >
         <div className="px-4 py-6 space-y-4">
           {navItems.map((item) => (
-			<a
-			href={item.href}
-			className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-			onClick={onToggle}
-			>
-				{item.label}
-			</a>
+            <a
+              href={item.href}
+              className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+              onClick={onToggle}
+            >
+              {item.label}
+            </a>
 		  ))}
-			{externalLinks.map((link) => (
-			<a
-				key={link.href}
-				href={link.href}
-				className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
-				target={link.target}
-				rel={link.rel}
-				aria-label={link.text}
-			>
-				{link.text}
-			</a>
-			))}
+          {externalLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+              target={link.target}
+              rel={link.rel}
+              aria-label={link.text}
+            >
+              {link.text}
+            </a>
+          ))}
         </div>
       </div>
     </div>
