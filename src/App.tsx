@@ -10,7 +10,7 @@ const App = () => {
   	<>
 		<NavBar/>
 		<SplitScreen/>
-		<div className="bg-neutral-50 dark:bg-black min-h-screen py-16 relative">
+		<div className="bg-neutral-50 dark:bg-black py-16 relative">
 			<div className="absolute top-0 left-0 right-0 h-px bg-gray-300 shadow-lg"></div>
 			<PortfolioHeader text={headerTopThree}/>
 			<ProjectGrid isTopThree={true}/>

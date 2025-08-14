@@ -41,7 +41,14 @@ export const projects = [
     id: 4,
     image: spaceImage,
     title: "Test for further section",
-    description: "Another test juhu!!!.",
+    description: "Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!",
+    link: "#"
+  },
+    {
+    id: 4,
+    image: spaceImage,
+    title: "Second further Section tile",
+    description: "Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!",
     link: "#"
   },
 ]
