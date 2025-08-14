@@ -59,3 +59,24 @@ export const imgItems = [
 		{ href: "https://linkedin.com/in/marius-meier-msc", label: "LinkedIn", lightSource: LinkedInLight, darkSource: LinkedInDark, type: "image" as const},
 		{ href: "/resume.pdf", label: "Resume", lightSource: CvLogoLight, darkSource: CvLogoDark, type: "pdf" as const}
 	]
+
+export const externalLinks = [
+  { 
+    href: "https://github.com/nipsu24",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    text: "Github" 
+  },
+  { 
+    href: "https://linkedin.com/in/marius-meier-msc",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    text: "LinkedIn"
+  },
+  { 
+    href: "/resume.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    text: "Resume"
+  }
+]
