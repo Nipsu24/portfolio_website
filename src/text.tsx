@@ -1,12 +1,20 @@
 import spaceImage from './assets/space.jpg';
+import GithubLogoLight from './assets/logos/github_light.png'
+import GithubLogoDark from './assets/logos/github_dark.png'
+import LinkedInLight from './assets/logos/linkedin_light.png'
+import LinkedInDark from './assets/logos/linkedin_dark.png'
+import CvLogoLight from './assets/logos/resume_light.png'
+import CvLogoDark from './assets/logos/resume_dark.png'
+import Cub3DImg from './assets/projects/Cub3D.png'
 
+// Main text elements on website
 export const greeting = "<Hi there, nice to meet you/>"
 export const aboutText = "I am an aspiring software developer with main interest in backend/api development. Open minded and always up to learn about new tech and tools"
 export const hintToProjects = "Find out what I have been working on recently \u{1F680}"
 export const headerTopThree = "SOME OF MY LATEST PROJECTS";
-
 export const headerFurtherProjects = "FURTHER PROJECTS";
 
+// Project tiles information
 export const projects = [
 	  {
     id: 1,
@@ -24,10 +32,10 @@ export const projects = [
   },
   {
     id: 3,
-    image: spaceImage,
-    title: "Data Visualization",
-    description: "Interactive charts and graphs using D3.js and modern web technologies.",
-    link: "#"
+    image: Cub3DImg,
+    title: "Cub3D",
+    description: "Custom 3D renderer written in C, inspired by early FPS games. Featuring map parsing, raycasting techniques, texture mapping, and player navigation.",
+    link: "https://github.com/Nipsu24/42_Cub3D/tree/main"
   },
    {
     id: 4,
@@ -37,3 +45,10 @@ export const projects = [
     link: "#"
   },
 ]
+
+// Logos within NavBar
+export const imgItems = [
+		{ href: "https://github.com/nipsu24", label: "Github", lightSource: GithubLogoLight, darkSource: GithubLogoDark, type: "image" as const},
+		{ href: "https://linkedin.com/in/marius-meier-msc", label: "LinkedIn", lightSource: LinkedInLight, darkSource: LinkedInDark, type: "image" as const},
+		{ href: "/resume.pdf", label: "Resume", lightSource: CvLogoLight, darkSource: CvLogoDark, type: "pdf" as const}
+	]

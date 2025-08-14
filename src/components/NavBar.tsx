@@ -2,12 +2,7 @@ import NavigationLinks from './NavigationLinks'
 import Hamburger from './Hamburger'
 import { useState, useEffect } from 'react';
 import Logo from './Logo'
-import GithubLogo from '../assets/github-mark.png'
-import GithubLogoWhite from '../assets/github-mark-white.png'
-import LinkedInLogo from '../assets/linkedin-Black.png'
-import LinkedInLogoWhite from '../assets/linkedin.png'
-import CvLogo from '../assets/image.png'
-import CvLogoDark from '../assets/resume.png'
+import { imgItems } from '../text';
 import NavImg from './NavImg'
 
 const NavBar = () => {
@@ -25,12 +20,6 @@ const NavBar = () => {
     { href: "#portfolio", label: "Portfolio" },
     { href: "#contact", label: "Contact" }
   ];
-
-  	const imgItems = [
-		{ href: "https://github.com/nipsu24", label: "Github", lightSource: GithubLogo, darkSource: GithubLogoWhite, type: "image" as const},
-		{ href: "https://linkedin.com/in/marius-meier-msc", label: "LinkedIn", lightSource: LinkedInLogo, darkSource: LinkedInLogoWhite, type: "image" as const},
-		{ href: "/resume.pdf", label: "Resume", lightSource: CvLogo, darkSource: CvLogoDark, type: "pdf" as const}
-	]
 
   useEffect(() => {
 	const handleScroll = () => {
