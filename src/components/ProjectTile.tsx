@@ -3,6 +3,7 @@ interface ProjectTileProps {
   title: string;
   description: string;
   link?: string;
+  highlightProject: boolean;
 }
 
 const ProjectTile = ({

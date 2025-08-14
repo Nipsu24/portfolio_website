@@ -21,35 +21,40 @@ export const projects = [
     image: spaceImage,
     title: 'Shell Interpreter',
     description: 'A project written in C, orienting on the behaviour of the bash shell.',
-    link: 'https://github.com/Nipsu24/42_minishell'
+    link: 'https://github.com/Nipsu24/42_minishell',
+    highlightProject: true
   },
   {
     id: 2,
     image: spaceImage,
     title: 'React Portfolio',
     description: 'A modern portfolio website built with React and Tailwind CSS.',
-    link: '#'
+    link: '#',
+    highlightProject: true
   },
   {
     id: 3,
     image: Cub3DImg,
     title: 'Cub3D',
     description: 'Custom 3D renderer written in C, inspired by early FPS games. Featuring map parsing, raycasting techniques, texture mapping, and player navigation.',
-    link: 'https://github.com/Nipsu24/42_Cub3D/tree/main'
+    link: 'https://github.com/Nipsu24/42_Cub3D/tree/main',
+    highlightProject: true
   },
   {
     id: 4,
     image: spaceImage,
     title: 'Test for further section',
     description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
-    link: '#'
+    link: '#',
+    highlightProject: false
   },
   {
     id: 4,
     image: spaceImage,
     title: 'Second further Section tile',
     description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
-    link: '#'
+    link: '#',
+    highlightProject: false
   }
 ];
 
