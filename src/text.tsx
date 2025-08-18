@@ -14,6 +14,9 @@ import JSImg from './assets/logos/javaScript.png';
 import TSImg from './assets/logos/ts.png';
 import atSign from './assets/logos/atSign.png';
 import atSignDark from './assets/logos/atSign_dark.png';
+import PongImg from './assets/projects/PongImg.png';
+import IrcImg from './assets/projects/IRCIMG.png';
+import minishellImg from './assets/projects/minishellImg.png';
 
 
 
@@ -75,32 +78,35 @@ export const toolSet = [
 
 // Project tiles information
 export const projects = [
-	  {
-    id: 1,
-    image: spaceImage,
-    title: 'Shell Interpreter',
-    description: 'A project written in C, orienting on the behaviour of the bash shell.',
-    link: 'https://github.com/Nipsu24/42_minishell',
+  {
+    image: PongImg,
+    title: 'The Pong',
+    description: 'Webbased pong game utilising a modern web tech stack with Typescript/React.JS (frontend), Node.JS/Fastify (backend) and a SQLite database (via Prisma client). Featuring user management, PvP, PvE and tournament mode.',
+    link: 'https://github.com/Nipsu24/42_transcendence',
+    highlightProject: true
+  },
+   {
+    image: IrcImg,
+    title: 'Internet Relay Chat (IRC)',
+    description: 'A chat server written in C++, using socket programming to handle multiple client connections over TCP (IPv4). Enables real-time communication between clients and includes core features of the IRC protocol, such as: User management, channels, modes and command parsing.',
+    link: 'https://github.com/Nipsu24/42_irc',
     highlightProject: true
   },
   {
-    id: 2,
-    image: spaceImage,
-    title: 'React Portfolio',
-    description: 'A modern portfolio website built with React and Tailwind CSS.',
-    link: '#',
-    highlightProject: true
-  },
-  {
-    id: 3,
     image: Cub3DImg,
     title: 'Cub3D',
     description: 'Custom 3D renderer written in C, inspired by early FPS games. Featuring map parsing, raycasting techniques, texture mapping, and player navigation.',
     link: 'https://github.com/Nipsu24/42_Cub3D/tree/main',
     highlightProject: true
   },
+	  {
+    image: minishellImg,
+    title: 'Shell Interpreter',
+    description: 'A custom shell written in C, orienting on the bash command line shell. Consisting of extensive parsing/lexing, command execution (built-in and external), process piping, redirections and signal handling.',
+    link: 'https://github.com/Nipsu24/42_minishell',
+    highlightProject: true
+  },
   {
-    id: 4,
     image: spaceImage,
     title: 'Test for further section',
     description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
@@ -108,7 +114,6 @@ export const projects = [
     highlightProject: false
   },
   {
-    id: 4,
     image: spaceImage,
     title: 'Second further Section tile',
     description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
