@@ -14,7 +14,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isVisible, isOpen, onToggle }) =>
     <div className="md:hidden">
       <button
         onClick={onToggle}
-        className="text-black dark:text-white hover:text-gray-500 p-2"
+        className="text-gray-800 dark:text-white hover:text-gray-500 p-2"
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
       >
         {/* Hamburger to X animation */}
@@ -47,7 +47,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isVisible, isOpen, onToggle }) =>
           {navItems.map((item) => (
             <a
               href={item.href}
-              className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+              className="block text-gray-600 dark:text-white hover:text-gray-500 py-2 text-lg"
               onClick={onToggle}
             >
               {item.label}
@@ -57,7 +57,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ isVisible, isOpen, onToggle }) =>
             <a
               key={link.href}
               href={link.href}
-              className="block text-black dark:text-white hover:text-gray-500 py-2 text-lg"
+              className="block text-gray-600 dark:text-white hover:text-gray-500 py-2 text-lg"
               target={link.target}
               rel={link.rel}
               aria-label={link.text}

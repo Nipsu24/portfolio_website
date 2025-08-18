@@ -1,4 +1,4 @@
-import { toolSet } from "../text";
+import { toolSet } from '../text';
 
 const ToolsLogos = () => {
   return (
