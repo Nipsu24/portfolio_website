@@ -21,7 +21,7 @@ const SplitScreen = () => {
           <div className={`text-center py-16 transition-all duration-1000 ease-out ${
         				isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       				}`}>
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{greeting}</h1>
+            <h1 className="text-4xl font-bold text-gray-700 dark:text-white">{greeting}</h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{aboutText}</p>
             <ToolsLogos />
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{hintToProjects}</p>

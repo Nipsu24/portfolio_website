@@ -2,6 +2,7 @@ import NavBar from './components/NavBar';
 import ProjectGrid from './components/ProjectGrid';
 import SplitScreen from './components/SplitScreen';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <div className="absolute top-0 left-0 right-0 h-px bg-gray-300 shadow-lg"></div>
         <ProjectGrid/>
       </div>
+      <Contact/>
       <Footer/>
     </>
   );

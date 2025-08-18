@@ -12,6 +12,7 @@ import CPlusPlusImg from './assets/logos/cplusplus.png';
 import NodeJsImg from './assets/logos/nodejs.png';
 import JSImg from './assets/logos/javaScript.png';
 import TSImg from './assets/logos/ts.png';
+import atSign from './assets/logos/atSign.png'
 
 
 
@@ -21,6 +22,25 @@ export const aboutText = 'I am an aspiring software developer with main interest
 export const hintToProjects = 'Find out what I have been working on recently \u{1F680}';
 export const headerTopThree = 'SOME OF MY LATEST PROJECTS';
 export const headerFurtherProjects = 'FURTHER PROJECTS';
+
+// contact section
+
+export const contactIcons = [
+    {
+    imageLight: atSign,
+    imageDark: atSign,
+    title: '@ logo',
+    type: 'image' as const,
+    href: 'marius.meier24@gmail.com'
+  },
+  {
+    imageLight: LinkedInLight,
+    imageDark: LinkedInDark,
+    title: 'LinkedIn Logo',
+    type: 'image' as const,
+    href: 'https://linkedin.com/in/marius-meier-msc'
+  },
+]
 
 // tools/languages icons
 export const toolSet = [
