@@ -16,7 +16,7 @@ const ProjectTile = ({
   };
 
   return (
-    <div className="max-w-sm overflow-hidden rounded-xl bg-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
+    <div className="max-w-sm overflow-hidden rounded-xl bg-white dark:bg-neutral-800 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
       onClick={handleTileClick}>
       <img
         className="h-48 w-full object-cover"
@@ -24,10 +24,10 @@ const ProjectTile = ({
         alt={title}
       />
       <div className="p-8">
-        <h3 className="mt-1 block text-lg leading-tight font-medium text-black">
+        <h3 className="mt-1 block text-lg leading-tight font-medium text-black dark:text-white">
           {title}
         </h3>
-        <p className="mt-2 text-gray-500">
+        <p className="mt-2 text-gray-500 dark:text-gray-400">
           {description}
         </p>
       </div>
