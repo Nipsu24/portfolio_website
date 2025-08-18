@@ -13,6 +13,7 @@ import NodeJsImg from './assets/logos/nodejs.png';
 import JSImg from './assets/logos/javaScript.png';
 import TSImg from './assets/logos/ts.png';
 import atSign from './assets/logos/atSign.png'
+import atSignDark from './assets/logos/atSign_dark.png'
 
 
 
@@ -28,17 +29,19 @@ export const headerFurtherProjects = 'FURTHER PROJECTS';
 export const contactIcons = [
     {
     imageLight: atSign,
-    imageDark: atSign,
+    imageDark: atSignDark,
     title: '@ logo',
     type: 'image' as const,
-    href: 'marius.meier24@gmail.com'
+    href: 'marius.meier24@gmail.com',
+    label: 'Opens e-mail'
   },
   {
     imageLight: LinkedInLight,
     imageDark: LinkedInDark,
     title: 'LinkedIn Logo',
     type: 'image' as const,
-    href: 'https://linkedin.com/in/marius-meier-msc'
+    href: 'https://linkedin.com/in/marius-meier-msc',
+    label: 'Visits LinkedIn profile'
   },
 ]
 
