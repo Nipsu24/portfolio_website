@@ -18,7 +18,7 @@ const ProjectTile = ({
   return (
     <div className="max-w-sm overflow-hidden rounded-xl bg-white dark:bg-neutral-800 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer"
       onClick={handleTileClick}
-       aria-label={`View ${title} project`}>
+      aria-label={`View ${title} project`}>
       <img
         className="h-48 w-full object-cover"
         src={image}

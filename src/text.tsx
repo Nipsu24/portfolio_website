@@ -85,7 +85,7 @@ export const projects = [
     link: 'https://github.com/Nipsu24/42_transcendence',
     highlightProject: true
   },
-   {
+  {
     image: IrcImg,
     title: 'Internet Relay Chat (IRC)',
     description: 'A chat server written in C++, using socket programming to handle multiple client connections over TCP (IPv4). Enables real-time communication between clients and includes core features of the IRC protocol, such as: User management, channels, modes and command parsing.',
