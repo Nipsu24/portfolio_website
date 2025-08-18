@@ -6,6 +6,14 @@ import LinkedInDark from './assets/logos/linkedin_dark.png';
 import CvLogoLight from './assets/logos/resume_light.png';
 import CvLogoDark from './assets/logos/resume_dark.png';
 import Cub3DImg from './assets/projects/Cub3D.png';
+import ReactImg from './assets/logos/react.png';
+import CImg from './assets/logos/c.png';
+import CPlusPlusImg from './assets/logos/cplusplus.png';
+import NodeJsImg from './assets/logos/nodejs.png';
+import JSImg from './assets/logos/javaScript.png';
+import TSImg from './assets/logos/ts.png';
+
+
 
 // Main text elements on website
 export const greeting = '<Hi there, nice to meet you/>';
@@ -13,6 +21,34 @@ export const aboutText = 'I am an aspiring software developer with main interest
 export const hintToProjects = 'Find out what I have been working on recently \u{1F680}';
 export const headerTopThree = 'SOME OF MY LATEST PROJECTS';
 export const headerFurtherProjects = 'FURTHER PROJECTS';
+
+// tools/languages icons
+export const toolSet = [
+  {
+    image: CImg,
+    title: 'C programming language logo',
+  },
+  {
+    image: CPlusPlusImg,
+    title: 'C Plus Plus logo'
+  },
+  {
+    image: JSImg,
+    title: 'JavaScript logo'
+  },
+  {
+    image: TSImg,
+    title: 'TypeScript logo'
+  },
+  {
+    image: ReactImg,
+    title: 'React.js logo'
+  },
+  {
+    image: NodeJsImg,
+    title: 'Node.js logo'
+  }
+]
 
 // Project tiles information
 export const projects = [
