@@ -20,6 +20,10 @@ import minishellImg from './assets/projects/minishellImg.png';
 import libftImg from './assets/projects/libftImg.png';
 import solongImg from './assets/projects/solongImg.png';
 import minitalkImg from './assets/projects/minitalkImg.png';
+import philoImg from './assets/projects/philo.png';
+import pushSwapImg from './assets/projects/pushSwapImg.png';
+import gnlImg from './assets/projects/gnlImg.png';
+import printfImg from './assets/projects/printf.png';
 
 
 
@@ -93,13 +97,13 @@ export const projects = [
     title: 'Internet Relay Chat (IRC)',
     description: 'A chat server written in C++, using socket programming to handle multiple client connections over TCP (IPv4). Enables real-time communication between clients and includes core features of the IRC protocol, such as: User management, channels, modes and command parsing.',
     link: 'https://github.com/Nipsu24/42_irc',
-    highlightProject: true
+    highlightProject: false
   },
   {
     image: Cub3DImg,
     title: 'Cub3D',
     description: 'Custom 3D renderer written in C, inspired by early FPS games. Featuring map parsing, raycasting techniques, texture mapping, and player navigation.',
-    link: 'https://github.com/Nipsu24/42_Cub3D/tree/main',
+    link: 'https://github.com/Nipsu24/42_Cub3D',
     highlightProject: true
   },
 	  {
@@ -127,7 +131,35 @@ export const projects = [
     image: minitalkImg,
     title: 'mini_talk',
     description: 'Minimalist client-server-program utilising i.a. the C signal.h library, UNIX signals, and bitshifting to enable communication between the 2 executables.',
-    link: 'https://github.com/Nipsu24/42_so_long',
+    link: 'https://github.com/Nipsu24/42_mini_talk',
+    highlightProject: false
+  },
+  {
+    image: philoImg,
+    title: 'Dining Philosophers',
+    description: 'Simulation based on the dining philosophers problem. Uses threading and mutexes for deadlock and data race protection.',
+    link: 'https://github.com/Nipsu24/42_philosophers',
+    highlightProject: false
+  },
+  {
+    image: pushSwapImg,
+    title: 'Sorting Algorithm (push_swap)',
+    description: 'A program to sort a sequence of numbers, using only a limited set of operations.',
+    link: 'https://github.com/Nipsu24/42_push_swap',
+    highlightProject: false
+  },
+  {
+    image: gnlImg,
+    title: 'Custom getline function',
+    description: 'C function that reads and returns a line from a given file descriptor (e.g. files, stdin). Familiarises with manual memory allocation and freeing.',
+    link: 'https://github.com/Nipsu24/42_get_next_line',
+    highlightProject: false
+  },
+   {
+    image: printfImg,
+    title: 'Custom printf function',
+    description: 'A reimplementation of the C printf function, supporting the following conversions: c, s, p, d, i, u, x, X, %.',
+    link: 'https://github.com/Nipsu24/42_ft_printf',
     highlightProject: false
   }
 ];
