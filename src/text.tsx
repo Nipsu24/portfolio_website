@@ -17,6 +17,9 @@ import atSignDark from './assets/logos/atSign_dark.png';
 import PongImg from './assets/projects/PongImg.png';
 import IrcImg from './assets/projects/IRCIMG.png';
 import minishellImg from './assets/projects/minishellImg.png';
+import libftImg from './assets/projects/libftImg.png';
+import solongImg from './assets/projects/solongImg.png';
+import minitalkImg from './assets/projects/minitalkImg.png';
 
 
 
@@ -107,17 +110,24 @@ export const projects = [
     highlightProject: true
   },
   {
-    image: spaceImage,
-    title: 'Test for further section',
-    description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
-    link: '#',
+    image: libftImg,
+    title: 'Libft',
+    description: 'A library of 34 custom made functions, mainly orienting to the respective standard library functions of the C programming language. Used throughout Hive (42 school) projects.',
+    link: 'https://github.com/Nipsu24/42_libft',
     highlightProject: false
   },
   {
-    image: spaceImage,
-    title: 'Second further Section tile',
-    description: 'Another test juhu!!! Another test juhu!!! Another test juhu!!! Another test juhu!!!',
-    link: '#',
+    image: solongImg,
+    title: 'Retro-style 2D game',
+    description: 'A small 2D top-down game written in C, using the MLX42 graphics library (built on GLFW and OpenGL) for window management, sprite rendering and animation.',
+    link: 'https://github.com/Nipsu24/42_so_long',
+    highlightProject: false
+  },
+  {
+    image: minitalkImg,
+    title: 'mini_talk',
+    description: 'Minimalist client-server-program utilising i.a. the C signal.h library, UNIX signals, and bitshifting to enable communication between the 2 executables.',
+    link: 'https://github.com/Nipsu24/42_so_long',
     highlightProject: false
   }
 ];
