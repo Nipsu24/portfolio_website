@@ -1,4 +1,3 @@
-import spaceImage from './assets/space.jpg';
 import GithubLogoLight from './assets/logos/github_light.png';
 import GithubLogoDark from './assets/logos/github_dark.png';
 import LinkedInLight from './assets/logos/linkedin_light.png';
@@ -155,7 +154,7 @@ export const projects = [
     link: 'https://github.com/Nipsu24/42_get_next_line',
     highlightProject: false
   },
-   {
+  {
     image: printfImg,
     title: 'Custom printf function',
     description: 'A reimplementation of the C printf function, supporting the following conversions: c, s, p, d, i, u, x, X, %.',
