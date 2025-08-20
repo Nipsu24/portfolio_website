@@ -3,7 +3,7 @@ import { contactIcons } from '../text';
 
 const Contact = () => {
   return (
-    <div className="bg-white dark:bg-black py-16">
+    <div className="bg-white dark:bg-black py-6 sm:py-8 lg:py-16">
       <div id="contact" className="flex flex-col mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 text-center">
         <h2 className="text-4xl font-bold text-gray-700 dark:text-white">{'<Contact/>'}</h2>
 
@@ -24,13 +24,13 @@ const Contact = () => {
                 <img
                   src={icon.imageLight}
                   alt={icon.title}
-                  className="w-auto h-18 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 dark:hidden"
+                  className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 dark:hidden"
                 />
 
                 <img
                   src={icon.imageDark}
                   alt={icon.title}
-                  className="w-auto h-18 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 hidden dark:block"
+                  className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 hidden dark:block"
                 />
               </a>
             ))}

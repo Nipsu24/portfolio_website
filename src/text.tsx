@@ -28,7 +28,7 @@ import printfImg from './assets/projects/printf.png';
 
 // Main text elements on website
 export const greeting = '<Hi there, nice to meet you/>';
-export const aboutText = 'I am an aspiring software developer with main interest in backend/api development. Open minded and always up to learn about new tech and tools';
+export const aboutText = 'I am an aspiring software developer with main interest in backend/api development. Open-minded, curious, and always eager to learn about new technologies and tools.';
 export const hintToProjects = 'Find out what I have been working on recently \u{1F680}';
 export const headerTopThree = 'SOME OF MY LATEST PROJECTS';
 export const headerFurtherProjects = 'FURTHER PROJECTS';
