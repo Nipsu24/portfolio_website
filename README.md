@@ -14,10 +14,11 @@
 The repository contains the code of my portfolio website, listing all my recent projects and providing information on how to get in touch with me.
 
 ## Features
-- Supports all common screen sizes (also mobile)
+- Dynamically adjusts to all common screen sizes (also mobile)
 - Darkmode support
 - Dynamic navbar (with transforming logo)
 - Hamburger menu for mobile
+- interactive/animated elements (hover over, transition)
 - Various links (to internal and external content)
 
 ## Tech/Tools
