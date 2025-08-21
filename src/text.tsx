@@ -24,8 +24,6 @@ import pushSwapImg from './assets/projects/pushSwapImg.png';
 import gnlImg from './assets/projects/gnlImg.png';
 import printfImg from './assets/projects/printf.png';
 
-
-
 // Main text elements on website
 export const greeting = '<Hi there, nice to meet you/>';
 export const aboutText = 'I am an Espoo based software developer with main interest in backend and API development. Open-minded, curious, and always eager to learn about new technologies and tools.';
@@ -34,7 +32,6 @@ export const headerTopThree = 'SOME OF MY LATEST PROJECTS';
 export const headerFurtherProjects = 'ADDITIONAL PROJECTS';
 
 // contact section
-
 export const contactIcons = [
   {
     imageLight: atSign,
