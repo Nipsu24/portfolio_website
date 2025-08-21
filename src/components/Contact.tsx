@@ -12,7 +12,7 @@ const Contact = () => {
       Get in touch by e-mail or find me on LinkedIn!
           </p>
           <div className="flex flex-wrap gap-6 justify-center lg:justify-center my-6">
-            {contactIcons.map((icon) => (
+            {contactIcons.map((icon, idx) => (
               <div key={icon.href} className="flex items-center gap-2">
                 <a
                   key={icon.href}
@@ -33,7 +33,19 @@ const Contact = () => {
                     className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 hidden dark:block"
                   />
                 </a>
-                <span className="text-lg text-gray-600 dark:text-gray-200">{icon.text}</span>
+                {idx === 1 ? (
+                  <a
+                    href={icon.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={icon.label + ' text'}
+                    className="text-lg text-gray-600 dark:text-gray-200"
+                  >
+                    {icon.text}
+                  </a>
+                ) : (
+                  <span className="text-lg text-gray-600 dark:text-gray-200">{icon.text}</span>
+                )}
               </div>
             ))}
           </div>
