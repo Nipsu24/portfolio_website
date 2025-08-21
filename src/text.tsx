@@ -41,8 +41,9 @@ export const contactIcons = [
     imageDark: atSignDark,
     title: '@ logo',
     type: 'image' as const,
-    href: 'mailto:marius.meier24@gmail.com',
-    label: 'Opens e-mail'
+    href: 'mailto:contact@mariusmeier.fi',
+    label: 'Opens e-mail',
+    text: 'contact@mariusmeier.fi'
   },
   {
     imageLight: LinkedInLight,
@@ -50,7 +51,8 @@ export const contactIcons = [
     title: 'LinkedIn Logo',
     type: 'image' as const,
     href: 'https://linkedin.com/in/marius-meier-msc',
-    label: 'Visits LinkedIn profile'
+    label: 'Visits LinkedIn profile',
+    text: 'LinkedIn'
   }
 ];
 

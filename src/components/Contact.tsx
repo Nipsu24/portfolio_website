@@ -13,26 +13,28 @@ const Contact = () => {
           </p>
           <div className="flex flex-wrap gap-6 justify-center lg:justify-center my-6">
             {contactIcons.map((icon) => (
+              <div key={icon.href} className="flex items-center gap-2">
+                <a
+                  key={icon.href}
+                  href={icon.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={icon.label}
+                >
+                  <img
+                    src={icon.imageLight}
+                    alt={icon.title}
+                    className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 dark:hidden"
+                  />
 
-              <a
-                key={icon.href}
-                href={icon.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={icon.label}
-              >
-                <img
-                  src={icon.imageLight}
-                  alt={icon.title}
-                  className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 dark:hidden"
-                />
-
-                <img
-                  src={icon.imageDark}
-                  alt={icon.title}
-                  className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 hidden dark:block"
-                />
-              </a>
+                  <img
+                    src={icon.imageDark}
+                    alt={icon.title}
+                    className="w-auto h-10 sm:h-14 lg:h-16 opacity-75 filter brightness-90 hover:opacity-100 hover:brightness-100 transition-all duration-200 hidden dark:block"
+                  />
+                </a>
+                <span className="text-lg text-gray-600 dark:text-gray-200">{icon.text}</span>
+              </div>
             ))}
           </div>
         </div>
