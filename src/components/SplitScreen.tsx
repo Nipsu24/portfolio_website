@@ -1,4 +1,4 @@
-import me from '../assets/me.jpeg';
+import me from '../assets/me.jpg';
 import NavLink from './NavLink';
 import { useState, useEffect } from 'react';
 import { greeting, aboutText, hintToProjects } from '../text';
@@ -22,7 +22,7 @@ const SplitScreen = () => {
         				isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       				}`}>
             <h1 className="text-4xl font-bold text-gray-700 dark:text-white">{greeting}</h1>
-            <p className="mt-6 text-lg text-gray-600 dark:text-gray-300">{aboutText}</p>
+            <p className="text-center md:text-center lg:text-left mt-6 text-lg text-gray-600 dark:text-gray-300 whitespace-pre-line">{aboutText}</p>
             <ToolsLogos />
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">{hintToProjects}</p>
             <NavLink href="#portfolio" className="bg-neutral-50 hover:bg-neutral-200 dark:bg-gray-800 dark:hover:bg-gray-600 rounded-full p-3 animate-bounce mt-8 mx-auto cursor-pointer w-fit inline-flex">
@@ -39,7 +39,7 @@ const SplitScreen = () => {
             <img
               src={me}
               alt="Profile picture"
-              className="w-full h-auto object-cover object-bottom block"
+              className="w-full h-auto object-cover object-bottom block rounded-b rounded-t"
             />
           </div>
         </div>
