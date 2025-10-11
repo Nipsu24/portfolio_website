@@ -15,7 +15,7 @@ const SplitScreen = () => {
 
   return (
     <div className="bg-white dark:bg-black">
-      <div id="about" className="flex flex-col lg:flex-row mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 min-h-screen lg:min-h-0">
+      <div id="about" className="scroll-mt-16 flex flex-col lg:flex-row mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 min-h-screen lg:min-h-0">
         {/* Left Half - Content Area */}
         <div className="w-full lg:w-2/3 flex items-center justify-center py-2 sm:py-4 lg:py-0 lg:pr-8">
           <div className={`text-center py-8 sm:py-12 lg:py-16 transition-all duration-1000 ease-out ${

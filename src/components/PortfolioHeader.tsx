@@ -4,7 +4,7 @@ interface PortfolioProps {
 
 const PortfolioHeader: React.FC<PortfolioProps> = ({ text }) => {
   return (
-    <div id="portfolio" className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div id="portfolio" className="scroll-mt-16 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
       <div className="my-12 flex items-center">
         <div className="flex-1 h-px bg-gray-300 dark:bg-gray-300"></div>
         <span className="px-8 text-sm text-gray-600 dark:text-gray-300 font-bold tracking-wide">{text}</span>
