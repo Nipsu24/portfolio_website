@@ -23,6 +23,7 @@ import philoImg from './assets/projects/philo.png';
 import pushSwapImg from './assets/projects/pushSwapImg.png';
 import gnlImg from './assets/projects/gnlImg.png';
 import printfImg from './assets/projects/printf.png';
+import filmQuizImg from './assets/projects/Filmquiz.png';
 
 // Main text elements on website
 export const greeting = 'Hey, nice to meet you!';
@@ -114,6 +115,13 @@ export const projects = [
     description: 'A custom shell written in C, orienting on the bash command line shell. Consisting of extensive parsing/lexing, command execution (built-in and external), process piping, redirections and signal handling.',
     link: 'https://github.com/Nipsu24/42_minishell',
     highlightProject: true
+  },
+  {
+    image: filmQuizImg,
+    title: 'Filmquiz',
+    description: 'Webpage written in TypeScript / JavaScript consisting of a React.js frontend and an Express.js backend which utilises the OMDb API to provide short film desciptions based on randomly generated IMDb IDs.',
+    link: 'https://github.com/Nipsu24/film_quiz',
+    highlightProject: false
   },
   {
     image: libftImg,

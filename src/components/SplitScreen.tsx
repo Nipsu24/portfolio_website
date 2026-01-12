@@ -34,7 +34,9 @@ const SplitScreen = () => {
         </div>
 
         {/* Right Half - Image */}
-        <div className="w-full lg:w-1/3 flex items-end justify-center relative pb-0 pt-0 sm:pt-4 lg:pt-0">
+        <div className={`w-full lg:w-1/3 flex items-end justify-center relative pb-0 pt-0 sm:pt-4 lg:pt-0 transition-all duration-1000 ease-out ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}>
           <div className="relative w-full max-w-sm lg:max-w-none">
             <img
               src={me}
